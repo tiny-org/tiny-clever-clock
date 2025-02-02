@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "fonts": "./src/fontGeneration/ttf-to-png.sh",
     "prepublish": "build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +19,6 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.13.0",
-    "playwright": "^1.50.1",
     "pngjs": "^7.0.0",
     "tsup": "^8.3.6",
     "typescript": "^5.7.3"
