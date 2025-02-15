@@ -9,7 +9,8 @@ const allChars =
 
 const chars = allChars.split("");
 
-const data = fs.readFileSync("./src/fontGeneration/FiraCode-Regular.png");
+// const data = fs.readFileSync("./src/fontGeneration/FiraCode-Regular.png");
+const data = fs.readFileSync("./src/fontGeneration/MartianMono-StdRg.png");
 const png = PNG.sync.read(data) as Image;
 
 function createCharImage(png: Image, i: number): Image {
@@ -46,13 +47,7 @@ for (let i = 0; i < png.data.length; i += 1) {
   png.data[i] = 255 - png.data[i];
 }
 
-const png2 = {
-  width: png.width,
-  height: png.height,
-  data: png.data,
-};
-
-const png3 = charMap.get("A");
+const png3 = charMap.get("Q");
 
 console.log(png3?.data.length);
 

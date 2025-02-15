@@ -9,7 +9,8 @@ DOLLAR='$'
 CHARS="!${DOUBLE_QUOTE}#${DOLLAR}${IMAGEMAGIC_PERCENT}&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_${BACKTICK}abcdefghijklmnopqrstuvwxyz{|}~"
 
 DIR='./src/fontGeneration/'
-FONT_NAME='FiraCode-Regular'
+# FONT_NAME='FiraCode-Regular'
+FONT_NAME='MartianMono-StdRg'
 
 if [ "$(which convert)" = "convert not found" ]; then
     echo 'Missing imagemagick, please install it from e.g. https://github.com/ImageMagick/ImageMagick'
